@@ -1,6 +1,6 @@
 # Invoice Generator (Next.js)
 
-Invoice Generator is a web application built with **Next.js** that allows users to create, customize, and export professional invoices in PDF format. This project is designed to streamline the invoicing process for businesses and freelancers.
+Invoice Generator is a web application built with **Next.js** that allows users to create, customize, and export professional invoices in PDF format. This project is designed to streamline the invoicing process for businesses and freelancers. (Still working in this tool)
 
 ## Features
 
