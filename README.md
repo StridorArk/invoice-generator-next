@@ -11,6 +11,8 @@ Invoice Generator is a web application built with **Next.js** that allows users 
 - **Drag-and-Drop Logo Upload**: Easily upload a company logo for branding.
 
 ## Demo
+![image](https://github.com/user-attachments/assets/c98a8a65-94bb-40b8-bb4d-a3ad4428366a)
+
 
 ## Getting Started
 
