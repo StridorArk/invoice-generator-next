@@ -1,0 +1,70 @@
+.invoice-app{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+    width: 100%;
+    margin: 0px auto;
+    padding: 6em 0px;
+    perspective: 500px;
+    background-color: rgb(246, 249, 252);
+    overflow: hidden;
+    font-family: var(--cl-font-family, "Lexend Deca", sans-serif);
+}
+
+.export-button-container{
+    position: absolute;
+    bottom: 8rem;
+    right: 46rem;
+    transform: translateY(150%);
+}
+
+.export-pdf-button{
+    font-size: 1rem;
+    line-height: 1.75;
+    padding: 0.75rem 1.5rem;
+    background: #ff5c35;
+    color: #fff;
+}
+
+.export-pdf-button:hover {
+    background-color: #e04826;
+}
+
+.exporting-class{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    padding: 1.5em 3em;
+    color: rgb(33, 51, 67);
+    backface-visibility: hidden;
+    border: none; /* Remove any borders */
+    border-radius: 0.2em;
+    background-color: rgb(255, 255, 255);
+    box-shadow: none; /* Remove shadows */
+    max-height: 1122px; /* Ensure the form fits within an A4 page */
+    overflow: hidden; /* Prevent content from overflowing */
+    margin: 0; /* Remove centering */
+}
+
+.validation-errors {
+    background-color: #ffe6e6;
+    border: 1px solid #ff4d4d;
+    border-radius: 5px;
+    padding: 1em;
+    margin-bottom: 1em;
+    color: #ff4d4d;
+}
+
+.validation-errors ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.validation-errors li {
+    margin-bottom: 0.5em;
+    font-size: 0.9em;
+}

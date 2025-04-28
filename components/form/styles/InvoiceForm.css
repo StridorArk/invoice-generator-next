@@ -1,0 +1,645 @@
+/* filepath: d:\jmoli\Documents\Cursos\test_alba\invoice-generator\src\components\InvoiceForm.css */
+
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+::placeholder{
+    color: #425B76;
+}
+
+.invoice-form-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    padding: 1.5em 3em;
+    color: rgb(33, 51, 67);
+    backface-visibility: hidden;
+    border: 1px solid rgb(219, 228, 237);
+    border-radius: 0.2em;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0.5em 1.5em -0.5em;
+    transition: transform 0.5s;
+}
+
+.main-row {
+    display: flex;
+    width: 100%;
+}
+
+.left-side {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: normal;
+}
+
+.left-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px auto;
+    padding-bottom: 20px;
+    max-width: 350px;
+}
+
+.left-details input:hover,
+.left-details input:focus{
+    border-color: rgb(255, 122, 89);
+}
+
+.left-details .invoice-one{
+    width: 100%;
+    flex: unset;
+    display: flex;
+    justify-content: flex-start;
+    max-width: unset;
+}
+
+.invoice-one .invoice-name{
+    max-width: 100%;
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: left;
+    color: rgb(33, 51, 67);
+    outline: none;
+    border: 1px dashed transparent;
+    background-color: transparent;
+}
+
+.left-details .invoice-two{
+    flex: unset;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.invoice-two .first-name{
+    max-width: 50%;
+    width: unset;
+    font-size: 0.875em;
+    text-align: left;
+    color: rgb(33, 51, 67);
+    outline: none;
+    border: 1px dashed transparent;
+    background-color: transparent;
+}
+
+.invoice-two .last-name{
+    max-width: 50%;
+    width: unset;
+    font-size: 0.875em;
+    text-align: left;
+    color: rgb(33, 51, 67);
+    outline: none;
+    border: 1px dashed transparent;
+    background-color: transparent;
+}
+
+.left-details .invoice-three{
+    width: 100%;
+    flex: unset;
+    display: flex;
+    justify-content: flex-start;
+    max-width: unset;
+}
+
+.invoice-three .invoice-info{
+    max-width: 100%;
+    width: 100%;
+    font-size: 0.875em;
+    text-align: left;
+    color: rgb(33, 51, 67);
+    outline: none;
+    border: 1px dashed transparent;
+    background-color: transparent;
+}
+
+.right-side {
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.right-side input:hover,
+.right-side input:focus{
+    border-color: rgb(255, 122, 89);
+}
+
+/* Invoice logo */
+.invoice-drop-zone{
+    position: relative;
+    width: 60%;
+    max-width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    overflow: hidden;
+    border: 2px dashed rgb(255, 92, 53);
+    transform: scale(1);
+    transition: transform 0.3s;
+}
+
+.invoice-drop-zone2{
+    position: relative;
+    width: 60%;
+    max-width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    overflow: hidden;
+    border: 2px dashed transparent;
+    transform: scale(1);
+    transition: transform 0.3s;
+}
+
+.invoice-drop-zone:hover{
+    transform: scale(0.9) !important;
+}
+
+.drop-zone-description{
+    width: 50%;
+    font-size: 1em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.drop-zone-description2{
+    width: 50%;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+    display: none;
+}
+
+.logo-input{
+    position: absolute;
+    font-size: 10em;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.logo-placeholder{
+    display: inline;
+    margin-bottom: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+.logo-placeholder-none{
+    display: none;
+    margin-bottom: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+/*Invoice header*/
+.invoice-header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.invoice-number{
+    width: 100%;
+    flex: unset;
+    display: flex;
+    justify-content: flex-end;
+    max-width: unset;
+}
+
+.invoice-number label{
+    font-size: 1em;
+    font-weight: 300;
+    text-align: right;
+    color: rgb(33, 51, 67);  
+}
+
+.invoice-number .number-input{
+    max-width: 100%;
+    width: 30%;
+    font-size: 1em;
+    font-weight: 300;
+    text-align: right;
+    color: rgb(33, 51, 67);
+    outline: none;
+    border: 1px dashed transparent;
+    background-color: transparent;
+}
+
+.invoice-dates{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.invoice-dates label{
+    width: 50%;
+    color: rgb(33, 51, 67);
+    font-size: 1em;
+    font-weight: 300;
+    text-align: right;
+}
+
+.invoice-dates .react-datepicker-wrapper {
+    display: flex;
+    width: 30%;
+}
+
+.invoice-dates .react-datepicker-wrapper .react-datepicker__input-container {
+    display: inline-block;
+    position: relative;
+}
+
+.invoice-dates .react-datepicker-wrapper .react-datepicker__input-container input {
+    border: 1px dashed #0000;
+    color: #213343;
+    font-size: .9em;
+    font-weight: lighter;
+    outline: none;
+    text-align: right;
+    width: 100%;
+}
+
+.invoice-dates .react-datepicker-wrapper .react-datepicker__input-container input:focus, .invoice-dates .react-datepicker-wrapper .react-datepicker__input-container input:hover {
+    border-color: #ff5c35;
+}
+
+.main-body{
+    display: flex;
+    flex-direction: column;
+    padding: 3em 0px;
+}
+
+/* Items table */
+.items-section {
+    position: relative;
+}
+
+.items-table {
+    position: relative;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+    max-width: 100%;
+}
+
+.item-head{
+    font-size: 1em;
+    font-weight: 300;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    background-color: rgb(66, 91, 118);
+}
+
+.tab-head1{
+    padding: 0.5em 0.9em;
+    text-align: left;
+}
+
+.tab-head2{
+    padding: 0.5em 0.9em;
+    text-align: center;
+}
+
+.quantity-column {
+    display: flex;
+}
+
+.popover-button{
+    background: none;
+    border: none;
+}
+
+.popover-icon{
+    height: 20px;
+    width: 20px;
+    fill: #fff;
+}
+
+.popover-separator{
+    padding: 0px 5px;
+}
+
+.popover-body{
+    text-align: center;
+}
+
+.option-button{
+    align-items: center;
+    background: none;
+    border: none;
+    border-radius: 8px;
+    display: inline-flex;
+    gap: .5rem;
+    padding: 0;
+    color: var(--cl-anchor-color, #0068b1);
+    font-weight: var(--cl-anchor-font-weight, 500);
+    text-decoration: var(--cl-anchor-text-decoration, underline);
+}
+
+.item-row {
+    border-bottom: none;
+    outline: none;
+    border: 1px dashed transparent;
+    background-color: transparent;
+}
+
+.item-td{
+    position: relative;
+    padding: 1em;
+    overflow: hidden;
+}
+
+.item-div{
+    width: 100%;
+    flex: unset;
+    display: flex;
+    justify-content: flex-start;
+    max-width: unset;
+}
+
+.item-string{
+    max-width: 100%;
+    width: 100%;
+    font-size: 1em;
+    font-weight: 300;
+    text-align: left;
+    color: rgb(33, 51, 67);
+    outline: none;
+    border: 1px dashed transparent;
+    background-color: transparent;
+}
+
+.item-string:hover,
+.item-string:focus{
+    border-color: rgb(255, 122, 89);
+}
+
+.item-div-number{
+    display: flex;
+}
+
+.item-number{
+    width: 100%;
+    margin: auto;
+    font-size: 1em;
+    font-weight: 300;
+    text-align: center;
+    color: rgb(33, 51, 67);
+    outline: none;
+    border: 1px dashed transparent;
+    background-color: transparent;
+}
+
+.item-number:hover,
+.item-number:focus{
+    border-color: rgb(255, 122, 89);
+}
+
+.delete-item{
+    position: absolute;
+    visibility: hidden;
+    background: none;
+    border: none;
+    top: 50%;
+    right: 0.5em;
+    height: 1.5em;
+    width: 1.5em;
+    transform: translate(100%, -50%);
+    transition: transform 0.3s, opacity 0.3s, visibility 0.3s;
+    cursor: pointer;
+    padding: 0px;
+}
+
+.item-row:hover .delete-item,
+.item-row:focus-within .delete-item{
+    opacity: 1;
+    z-index: 99;
+    transform: translate(0px, -50%);
+    visibility: visible;
+}
+
+.delete-icon{
+    height: 25px;
+    width: 25px;
+    fill: #ff5c36;
+}
+
+.add-item{
+    visibility: hidden;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    max-height: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: rgb(255, 92, 53);
+    transition: max-height 0.3s;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.items-section:hover .add-item,
+.items-section:focus-within .add-item {
+    max-height: 3em;
+    visibility: visible;
+}
+
+/*footer*/
+.main-footer{
+    display: flex;
+    width: 100%;
+}
+
+.column-notes {
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: normal;
+}
+
+.invoice-notes{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 1em;
+    border: 1px solid rgb(66, 91, 118);
+    border-radius: 0.5em;
+}
+
+.notes-label{
+    font-size: 1em;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 0.5em;
+    color: rgb(66, 91, 118);
+}
+
+.notes-textarea{
+    max-width: 100%;
+    min-height: 2em;
+    display: flex;
+    resize: none;
+    font-size: 1em;
+    font-weight: 300;
+    border: 1px dashed transparent;
+    outline: none;
+    text-align: center;
+}
+
+.notes-textarea:hover, .notes-textarea:focus {
+    resize: vertical;
+    border-color: rgb(255, 122, 89);
+}
+
+.invoice-total{
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.total-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.total-data{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subtotal-input{
+    width: 100%;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: right;
+    outline: none;
+    border: 1px dashed transparent;
+    background-color: transparent;
+}
+
+.percent-div{
+    position: relative;
+    display: flex;
+    width: 20%;
+}
+
+.percent-input{
+    width: 100%;
+    font-size: 1em;
+    font-weight: 300;
+    text-align: right;
+    color: rgb(33, 51, 67);
+    outline: none;
+    border: 1px dashed transparent;
+    background-color: transparent;
+}
+
+.percent-input:hover,
+.percent-input:focus{
+    border-color: rgb(255, 122, 89);
+}
+
+.percent-span{
+    position: absolute;
+    left: 100%;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.separator{
+    width: 100%;
+    height: 0.1em;
+    margin: 0.5em 0px;
+    background-color: rgb(66, 91, 118);
+}
+
+.total-input{
+    width: 100%;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: right;
+    outline: none;
+    border: 1px dashed transparent;
+    background-color: transparent;
+}
+
+.export-pdf-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.export-pdf-button:hover {
+    background-color: #0056b3;
+}
+
+.pdf-notes {
+    max-width: 100%;
+    min-height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    font-weight: 300;
+    border: 1px solid rgb(66, 91, 118);
+    border-radius: 0.5em;
+    padding: 0.5em;
+    text-align: center;
+    white-space: pre-wrap; /* Preserve line breaks */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .invoice-form-container {
+        padding: 10px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input, textarea, button {
+        font-size: 14px;
+    }
+}
